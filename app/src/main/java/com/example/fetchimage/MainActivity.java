@@ -57,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void fetchImage() {
 
-        Toast.makeText(MainActivity.this, "Sorry", Toast.LENGTH_SHORT).show();
 
         progressDialog.setTitle("Downloading");
         progressDialog.setMessage("Processing!");
@@ -74,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
                              progressDialog.dismiss();
                              Bitmap image_bitmap = BitmapFactory.decodeFile(image_file.getAbsolutePath());
                              binding.imageview.setImageBitmap(image_bitmap);
+                             Toast.makeText(MainActivity.this, "Download Complete", Toast.LENGTH_SHORT).show();
 
 
                          }else
