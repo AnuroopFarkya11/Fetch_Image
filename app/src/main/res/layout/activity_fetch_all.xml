@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FetchAll"
+    android:orientation="vertical">
+
+
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        tools:listitem="@layout/photo_card"
+        android:layout_margin="20dp"
+        android:visibility="visible"
+        />
+<!--    <ImageView-->
+<!--        android:id="@+id/image"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="300dp"-->
+<!--        android:src="@drawable/ic_launcher_foreground"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/fetch_button"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Click"-->
+<!--        />-->
+</LinearLayout>
